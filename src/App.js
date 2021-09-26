@@ -10,29 +10,6 @@ import {
   useParams,
 } from "react-router-dom";
 
-  
-/*function App() {
-  const [list, setList] = useState([]);
-
-  useEffect(() => {
-    const fetchLists = async () => {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users');
-      const listData = await response.json();
-      setList(listData);
-    };
-    fetchLists();
-  }, []);
-
-  const persons = list.map((person) =>{
-    return  <div>
-              <h2>{person.name}</h2>
-              <h3>{person.username}</h3>
-            </div>
-  }
-  )
-
-}*/
-
 function App() {
     return (
       <Router>

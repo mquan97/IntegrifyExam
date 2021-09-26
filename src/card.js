@@ -17,7 +17,7 @@ function Card(props)    {
                 <h3>@{props.person.username}</h3>
             </div>
             <div className="User-website">
-                    {props.person.website}
+                    http://{props.person.website}
             </div>
             <div className="User-detail">
             <button onClick={handleClick(props.person.id)}>More details</button>
