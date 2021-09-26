@@ -85,7 +85,7 @@ function Person() {
         }
       })
     return () => mounted = false;
-  }, [])
+  })
 
   return (
     <div className="wrapper">

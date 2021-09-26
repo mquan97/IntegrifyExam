@@ -8,7 +8,7 @@ function Card(props)    {
 
     return (
         <div className="UserInfo">
-            <img className="Avatar"
+            <img className="Avatar" alt="avatar"
                 //src={props.author.avatarUrl}
                 //alt={props.pic}
             />
