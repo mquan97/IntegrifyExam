@@ -1,5 +1,8 @@
+
+
 function CardDetail(props)    {
     return (
+        
         <div className="UserDetails">
             <ul>
                 <p>- name: {props.person.name}</p>

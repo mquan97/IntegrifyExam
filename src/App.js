@@ -18,8 +18,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/:id1">
-              <Person />
+            <Route path="/:id">
+              <People />
             </Route>
           </Switch>
         </div>
@@ -48,25 +48,25 @@ function Home() {
   )
 }
 
-function Person() {
-  const { id1 } = useParams();
+function People() {
+  const { id } = useParams();
 
-  const [list, setList] = useState([]);
+  const [citizen, setCitizen] = useState([]);
 
   useEffect(() => {
     let mounted = true;
-    getPerson(id1)
+    getPerson(id)
       .then(items => {
         if(mounted) {
-          setList(items)
+          setCitizen(items)
         }
       })
     return () => mounted = false;
   })
-
-  return (
-    <div className="wrapper">
-      <CardDetail person={list}></CardDetail>
+   return ( 
+    citizen.length != 0 &&
+    <div>
+      <CardDetail person={citizen}></CardDetail>
     </div>
   );
 }
