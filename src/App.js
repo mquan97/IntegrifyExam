@@ -64,7 +64,7 @@ function People() {
     return () => mounted = false;
   })
    return ( 
-    citizen.length != 0 &&
+    citizen.length !== 0 &&
     <div>
       <CardDetail person={citizen}></CardDetail>
     </div>
